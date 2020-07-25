@@ -1,0 +1,11 @@
+{
+    "name": "amryami/task-travel-yalla",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "Classes",
+            "Interfaces\\": "Interfaces",
+            "Factory\\": "Factory"
+        }
+    }
+}
