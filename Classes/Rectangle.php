@@ -7,7 +7,7 @@ namespace Classes;
 use Interfaces\PolygonInterface;
 use Interfaces\ShapeInterface;
 
-class Rectangle implements ShapeInterface, PolygonInterface
+class Rectangle extends GeometryShape implements ShapeInterface, PolygonInterface
 {
 
     private $params;
@@ -15,6 +15,8 @@ class Rectangle implements ShapeInterface, PolygonInterface
     {
         $this->params = $params;
     }
+
+
     public function getAngles(){
         return 4;
     }

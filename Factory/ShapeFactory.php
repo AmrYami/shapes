@@ -7,15 +7,12 @@
 // /////////////////////////////////////////////////////////////////////////////
 namespace Factory;
 
-use Classes\GeometryShape;
 
 /**
  * Factory class for creating different GeometryShapes.
  */
-class ShapeFactory extends GeometryShape
+class ShapeFactory
 {
-
-
     /**
      * Creates a specific GeometryShape object from the given attributes.
      *
@@ -29,7 +26,6 @@ class ShapeFactory extends GeometryShape
     public static function createShape($shape, $params)
     {
         $shape = '\Classes\\' . $shape;
-
         return new $shape($params);
     }
 }

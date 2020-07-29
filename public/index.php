@@ -30,7 +30,7 @@ function getInfo($shape, $params) {
     try {
 
         $shapeObject = \Factory\ShapeFactory::createShape($shape, $params);
-        $info = $shape . PHP_EOL;
+        $info = $shapeObject->getName() . PHP_EOL;
 
         if ($shapeObject instanceof ShapeInterface)
         {

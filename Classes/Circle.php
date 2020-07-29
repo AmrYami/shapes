@@ -6,7 +6,7 @@ namespace Classes;
 
 use Interfaces\ShapeInterface;
 
-class Circle implements ShapeInterface
+class Circle extends GeometryShape implements ShapeInterface
 {
     private $radius;
     public function __construct($radius)
