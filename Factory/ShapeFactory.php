@@ -1,10 +1,5 @@
 <?php
 
-
-// /////////////////////////////////////////////////////////////////////////////
-// WORKING AREA
-// THIS IS AN AREAD WHERE YOU SHOULD WRITE YOUR CODE AND MAKE CHANGES.
-// /////////////////////////////////////////////////////////////////////////////
 namespace Factory;
 
 
@@ -19,6 +14,7 @@ class ShapeFactory
      * Usage examples:
      *     ShapeFactory::createShape("Circle", 4)
      *     ShapeFactory::createShape("Rectangle", [3, 5])
+     *     ShapeFactory::createShape("Rectangle", [4, 4, 4])
      *
      * @param string shape Shape to create.
      * @param array params Array of needed parameters.

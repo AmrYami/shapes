@@ -13,15 +13,6 @@ require __DIR__ . '/../vendor/autoload.php';
 
 define("PI", 3.14);
 
-
-
-// /////////////////////////////////////////////////////////////////////////////
-// TEST CODE
-// THE CODE BELOW IS READ ONLY CODE AND YOU SHOULD INSPECT IT TO SEE WHAT IT
-// DOES IN ORDER TO COMPLETE THE TASK, BUT DO NOT MODIFY IT IN ANY WAY
-// AS THAT WILL RESULT IN A TEST FAILURE
-// /////////////////////////////////////////////////////////////////////////////
-
 /**
  * Helper function which is used to create shape based on input parameters
  * and return information about that specific shape.
@@ -36,10 +27,12 @@ function getInfo($shape, $params) {
         {
             $info .= "Perimeter is: " . number_format($shapeObject->getPerimeter(),2) . PHP_EOL;
             $info .= "Area is: " . number_format($shapeObject->getArea(), 2) . PHP_EOL;
+            $info .= "<br>";
         }
         if ($shapeObject instanceof PolygonInterface)
         {
             $info .= "Number of angles: " . $shapeObject->getAngles() . PHP_EOL;
+            $info .= "<br><br>";
         }
         $info .= PHP_EOL;
 
